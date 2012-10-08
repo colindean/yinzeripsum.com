@@ -13,3 +13,7 @@ gem 'compass', '~> 0.11.6'
 gem 'grid-coordinates', '~> 1.1.4'
 
 gem 'fillertext'
+
+group :development do
+  gem 'heroku'
+end
