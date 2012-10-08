@@ -54,11 +54,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+code {
+  font-family: Courier, monospace;
+}
+
 a {
-  color: #3366cc;
+  color: #f5dc0f;
 }
 a:hover {
-  color: #3366cc;
+  color: #f5dc0f;
   text-decoration: none;
 }
 a:focus, a:active {
@@ -67,8 +71,8 @@ a:focus, a:active {
 
 body {
   font: 13px Arial, Helvetica, sans-serif;
-  background: white;
-  color: #0d0d0d;
+  background: black;
+  color: #f5dc0f;
 }
 body h1 {
   position: absolute;
@@ -87,8 +91,8 @@ body ul {
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
-  background: #e7e7e7;
-  border: 1px solid #cccccc;
+  background: #222222;
+  border: 1px solid #444444;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -99,7 +103,7 @@ body ul li {
   padding: 0 15px;
 }
 body ul li a {
-  color: black;
+  color: #f5dc0f;
   text-decoration: none;
 }
 body ul li a:hover {

@@ -1,0 +1,3 @@
+%h1
+  %code
+    http://#{request.host}#{':'+request.port.to_s if request.port != 80}/yinzer?chunk={[#{VALID_CHUNKS.join(',')}]}&num={integer}
