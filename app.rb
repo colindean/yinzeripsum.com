@@ -15,7 +15,9 @@ set :views, 'views'
 set :public_folder, 'public'
 set :haml, { format: :html5 } # default Haml format is :xhtml
 
-FillerText::FillerText.style = FillerText::Style::YinzerIpsum
+#require 'pry'
+#binding.pry
+FillerText.style = FillerText::Style::YinzerIpsum
 VALID_CHUNKS = %i[sentences words characters bytes paragraphs].freeze
 
 # Application routes
@@ -31,7 +33,7 @@ get '/yinzer' do
   num = num.to_i
   raise 'Invalid chunk specified' unless VALID_CHUNKS.member?(what)
 
-  FillerText::FillerText.send what, num
+  FillerText.send what, num
 end
 
 get '/api' do

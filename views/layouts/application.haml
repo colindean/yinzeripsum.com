@@ -1,5 +1,5 @@
 !!!
-%html{html_attrs}
+%html
   %head
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
@@ -8,8 +8,8 @@
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
     %script{:type => "text/javascript", :src => "/javascripts/lib/modernizr-1.6.min.js"}
     %script{:type => "text/javascript", :src => "/javascripts/application.js"}
-    
+
   %body
-    = partial :_nav_main
-    = yield
-    = partial :_analytics
+    != partial :_nav_main
+    != yield
+    != partial :_analytics

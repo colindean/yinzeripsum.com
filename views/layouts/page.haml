@@ -1,5 +1,5 @@
 !!!
-%html{html_attrs}
+%html
   %head
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
@@ -8,6 +8,6 @@
     %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
     %script{:type => "text/javascript", :src => "/javascripts/site.js"}
   %body
-    = partial :_nav_main
-    = yield
-    = partial :_analytics
+    != partial :_nav_main
+    != yield
+    != partial :_analytics

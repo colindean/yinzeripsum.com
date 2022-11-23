@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby '2.7.6'
 
 gem 'haml'
-gem 'rake'
+gem 'puma'
 gem 'shotgun'
 gem 'sinatra'
 
@@ -17,3 +17,11 @@ gem 'sass'
 gem 'grid-coordinates', '~> 1.1.4'
 
 gem 'fillertext'
+
+group :development do
+  gem 'foreman'
+  gem 'pry'
+  gem 'rake'
+  gem 'rubocop'
+  gem 'rubocop-rake'
+end
