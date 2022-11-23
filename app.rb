@@ -37,3 +37,7 @@ end
 get '/api' do
   haml :api, layout: :'layouts/page'
 end
+
+get '/health' do
+  true
+end
